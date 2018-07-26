@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:elevation="16dp"
+    android:background="@color/branco"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:padding="12dp"
+            android:background="@drawable/shape_oval_cinza"
+            android:src="@drawable/ic_package"
+            android:tint="@android:color/white"
+            android:contentDescription="@null"/>
+
+        <TextView
+            android:id="@+id/tvCargaFreteDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextViewPadrao"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:text="Frete"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvNomeClienteDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextViewPadrao"
+            android:textStyle="bold"
+            android:text="Cliente"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/cinza" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llOpcoesEditar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextViewOpcoesStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_edit"
+            android:text="@string/editar" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llOpcoesExcluir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            style="@style/TextViewOpcoesStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_trash"
+            android:text="@string/excluir" />
+
+        <ProgressBar
+            android:id="@+id/pbExcluirFrete"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:visibility="invisible"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llOpcoesLigar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="?android:attr/selectableItemBackground"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvOpcoesLigar1"
+            style="@style/TextViewOpcoesStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_phone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llOpcoesLigar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvOpcoesLigar2"
+            style="@style/TextViewOpcoesStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_phone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llOpcoesCancelar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextViewOpcoesStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_close"
+            android:text="@string/cancelar" />
+
+    </LinearLayout>
+
+</LinearLayout>

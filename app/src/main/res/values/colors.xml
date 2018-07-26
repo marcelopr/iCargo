@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#57cff4</color>
+    <color name="colorPrimaryDark">#4cb4d4</color>
+    <color name="colorAccent">#9013fe</color>
+    <color name="colorAccentDark">#740fce</color>
+
+    <color name="branco">#FFFFFF</color>
+    <color name="cinza">#c1c1c1</color>
+    <color name="cinzaClaro">#d7d7d7</color>
+    <color name="cinzaEscuro">#949393</color>
+    <color name="cinzaIcone">#949393</color>
+    <color name="cinzaEscuro2">#4d4d4d</color>
+    <color name="cinzaFretesHoje">#efeff9</color>
+
+    <color name="azul">#57cff4</color>
+    <color name="vermelho">#f4575a</color>
+    <color name="verde">#57f461</color>
+    <color name="verdeEscuro">#45c14d</color>
+    <color name="amarelo">#f4e257</color>
+    <color name="rosa">#f457ec</color>
+    <color name="marrom">#9b3738</color>
+    <color name="roxo">#9013fe</color>
+
+    <color name="preto_transparente">#43000000</color>
+
+</resources>

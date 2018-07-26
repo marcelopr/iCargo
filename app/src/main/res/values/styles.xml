@@ -1,0 +1,100 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_chevron_left_black_24dp</item>
+        <item name="android:statusBarColor">@color/cinzaEscuro2</item>
+    </style>
+
+    <style name="ToolbarPadrao" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="TextViewPadrao">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="android:textColor">@color/cinzaEscuro</item>
+    </style>
+
+    <style name="TextViewOpcoesStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/nunito_light</item>
+        <item name="android:textColor">@color/cinzaEscuro</item>
+        <item name="android:drawablePadding">12dp</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="EditTextFormStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="android:textColor">@color/cinzaEscuro2</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">12dp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="AvisoTextView">
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/cinzaEscuro</item>
+        <item name="android:drawablePadding">12dp</item>
+        <item name="android:layout_marginStart">32dp</item>
+        <item name="android:layout_marginEnd">32dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="EditTextStyle">
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:paddingBottom">24dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="ButtonAddStyle">
+        <item name="android:padding">16dp</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:background">@drawable/button_add_selector</item>
+        <item name="android:src">@drawable/ic_done_white_24dp</item>
+    </style>
+
+    <style name="TextViewOptionsStyle">
+        <item name="android:padding">16dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:drawablePadding">12dp</item>
+    </style>
+
+    <style name="FragmentDialogAnimationStyle">
+        <item name="android:windowEnterAnimation">@anim/to_top</item>
+        <item name="android:windowExitAnimation">@anim/to_bottom</item>
+    </style>
+
+    <style name="dialogStyle">
+        <item name="android:windowMinWidthMajor">80%</item>
+        <item name="android:windowMinWidthMinor">80%</item>
+        <item name="android:windowEnterAnimation">@anim/from_bottom</item>
+    </style>
+
+    <style name="SeparatorStyle">
+        <item name="android:background">?android:listDivider</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/to_top</item>
+        <item name="android:windowExitAnimation">@anim/to_bottom</item>
+    </style>
+
+</resources>

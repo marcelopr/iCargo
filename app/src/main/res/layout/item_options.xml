@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cinza" />
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:gravity="center">-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/llOpcoesRealizada"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginEnd="24dp"-->
+            <!--android:paddingTop="12dp"-->
+            <!--android:paddingBottom="12dp"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="vertical"-->
+            <!--android:visibility="gone"-->
+            <!--android:background="?android:attr/selectableItemBackground">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/shape_ring_item_options"-->
+                <!--android:contentDescription="@null"-->
+                <!--android:padding="8dp"-->
+                <!--android:src="@drawable/ic_done_white_24dp"-->
+                <!--android:tint="@color/cinza" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:text="@string/realizada"-->
+                <!--android:textColor="@color/cinza"-->
+                <!--android:textSize="12sp" />-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/llOpcoesEditar"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingTop="12dp"-->
+            <!--android:paddingBottom="12dp"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="vertical"-->
+            <!--android:background="?android:attr/selectableItemBackground">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/shape_ring_item_options"-->
+                <!--android:contentDescription="@null"-->
+                <!--android:padding="8dp"-->
+                <!--android:src="@drawable/ic_done_white_24dp"-->
+                <!--android:tint="@color/cinza" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:text="@string/editar"-->
+                <!--android:textColor="@color/cinza"-->
+                <!--android:textSize="12sp" />-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/llOpcoesExcluir"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginStart="24dp"-->
+            <!--android:paddingTop="12dp"-->
+            <!--android:paddingBottom="12dp"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="vertical"-->
+            <!--android:background="?android:attr/selectableItemBackground">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/shape_ring_item_options"-->
+                <!--android:contentDescription="@null"-->
+                <!--android:padding="8dp"-->
+                <!--android:src="@drawable/ic_done_white_24dp"-->
+                <!--android:tint="@color/cinza" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:text="@string/excluir"-->
+                <!--android:textColor="@color/cinza"-->
+                <!--android:textSize="12sp" />-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/llOpcoesCancelar"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginStart="24dp"-->
+            <!--android:paddingTop="12dp"-->
+            <!--android:paddingBottom="12dp"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="vertical"-->
+            <!--android:background="?android:attr/selectableItemBackground">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/shape_ring_item_options"-->
+                <!--android:contentDescription="@null"-->
+                <!--android:padding="8dp"-->
+                <!--android:src="@drawable/ic_done_white_24dp"-->
+                <!--android:tint="@color/cinza" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:text="@string/cancelar"-->
+                <!--android:textColor="@color/cinza"-->
+                <!--android:textSize="12sp" />-->
+
+        <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingEnd="16dp"
+    android:paddingBottom="16dp"
+    android:background="?android:attr/selectableItemBackground">
+
+    <TextView
+        android:id="@+id/tvLetraPaciente"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:paddingStart="48dp"
+        android:paddingEnd="8dp"
+        android:text="A"
+        android:layout_marginTop="24dp"
+        android:maxLength="1"
+        android:textSize="12sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/shape_background_letra_clientes"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:gravity="center"/>
+
+    <!--<View-->
+        <!--android:layout_width="20dp"-->
+        <!--android:layout_height="2dp"-->
+        <!--android:layout_marginStart="16dp"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:background="@color/cinza"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/tvTelefoneCliente"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"/>-->
+
+    <TextView
+        android:id="@+id/tvNomeCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextViewPadrao"
+        android:textColor="@color/cinzaEscuro2"
+        android:layout_marginEnd="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:text="Marlene Bittencourt"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvEnderecoCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextViewPadrao"
+        android:layout_marginEnd="48dp"
+        android:layout_marginStart="48dp"
+        android:text="Avenida das Flores 1200" />
+
+    <TextView
+        android:id="@+id/tvTelefoneCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextViewPadrao"
+        android:layout_marginEnd="48dp"
+        android:layout_marginStart="48dp"
+        android:text="(55)3265-2020"/>
+
+</LinearLayout>

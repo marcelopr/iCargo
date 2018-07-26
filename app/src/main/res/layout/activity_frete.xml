@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/branco"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".clientes.ClienteActivity">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tbFrete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:elevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <include layout="@layout/layout_toolbar"/>
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:id="@+id/llCamposFrete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tbFrete">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:src="@drawable/ic_user"
+                android:layout_gravity="center"
+                android:contentDescription="@null"/>
+
+            <Spinner
+                android:id="@+id/spClienteFrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:hint="@string/cliente"
+                android:background="@android:color/transparent"/>
+
+            <LinearLayout
+                android:id="@+id/viewSpinnerBottom"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/cinzaEscuro"
+                android:alpha="0.5"
+                android:orientation="horizontal"/>
+
+            <EditText
+                android:id="@+id/etEnderecoFrete"
+                style="@style/EditTextFormStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_location"
+                android:hint="@string/endereco"
+                android:inputType="textPostalAddress"/>
+
+            <EditText
+                android:id="@+id/etCargaFrete"
+                style="@style/EditTextFormStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_package"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:hint="@string/carga" />
+
+            <EditText
+                android:id="@+id/etValorFrete"
+                style="@style/EditTextFormStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_money"
+                android:hint="@string/label_valor_cobrado"
+                android:inputType="number"/>
+
+            <EditText
+                android:id="@+id/tvDataFrete"
+                style="@style/EditTextFormStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_calendar"
+                android:hint="@string/dia"
+                android:focusable="false"/>
+
+            <EditText
+                android:id="@+id/tvHoraFrete"
+                style="@style/EditTextFormStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_clock"
+                android:focusable="false"
+                android:hint="@string/hora" />
+
+            <ImageButton
+                android:id="@+id/btnAddFrete"
+                style="@style/ButtonAddStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@null" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/pbAddFrete"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="8dp"
+            android:indeterminate="true"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ProgressBar
+            android:id="@+id/pbCarregaFrete"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:indeterminate="true"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tbFrete" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

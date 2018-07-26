@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="24dp"
+    android:background="?android:attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/ivCheckFrete"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/shape_ring_frete_realizado"
+        android:contentDescription="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout2" />
+
+    <TextView
+        android:id="@+id/tvDataFrete"
+        style="@style/TextViewPadrao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="Hoje\n20:30"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="24dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/ivCheckFrete"
+        app:layout_constraintStart_toEndOf="@+id/tvDataFrete"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvCargaFrete"
+            style="@style/TextViewPadrao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pacote médio"
+            android:textStyle="bold"
+            android:textColor="@color/cinzaEscuro2"/>
+
+        <TextView
+            android:id="@+id/tvNomeFrete"
+            style="@style/TextViewPadrao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maria Anunciação" />
+
+        <TextView
+            android:id="@+id/tvEnderecoFrete"
+            style="@style/TextViewPadrao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rua Borges Almirante 300"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextViewPadrao"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6dp"
+                android:gravity="top"
+                android:text="@string/label_RS"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvValorFrete"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="2dp"
+                android:gravity="top"
+                android:text="180"
+                android:textSize="22sp"
+                android:textColor="@color/cinzaEscuro"
+                android:fontFamily="@font/nunito_light"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pbCheckFrete"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCheckFrete"
+        app:layout_constraintEnd_toEndOf="@+id/ivCheckFrete"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/ivCheckFrete"
+        app:layout_constraintTop_toTopOf="@+id/ivCheckFrete" />
+
+</android.support.constraint.ConstraintLayout>
